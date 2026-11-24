@@ -52,4 +52,6 @@ interface interativa. CSVs e JSON preservam os dados e as configurações.
 
 Validação cruzada com SciPy/python-control, benchmarking n=5/10/20,
 comparação de ordens de Padé, simulador PID digital com atraso configurável
-e capturas reais da aplicação. Artigo e publicação no GitHub ainda pendentes.
+e capturas reais da aplicação. Artigo ainda pendente. O repositório público
+foi criado após aprovação desta etapa:
+https://github.com/Edsonnetocf/controle-de-processos-nyquist

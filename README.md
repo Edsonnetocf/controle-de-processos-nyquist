@@ -93,7 +93,10 @@ explicitamente identificados como aproximações de Padé [3/3].
 
 ## Reprodutibilidade e GitHub
 
-O repositório será versionado localmente nesta etapa. A publicação no GitHub
-continua pendente e dependerá do acesso à conta e da escolha de destino.
+Repositório público do projeto:
+https://github.com/Edsonnetocf/controle-de-processos-nyquist
+
+A primeira etapa está versionada localmente e preparada para publicação.
+O desenvolvimento das próximas etapas será registrado no mesmo histórico.
 Não há resultados de hardware, benchmarking completo ou validação cruzada
 apresentados como realizados.
