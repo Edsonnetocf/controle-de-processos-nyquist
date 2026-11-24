@@ -126,12 +126,17 @@ em software, conforme autorização do professor relatada pelo aluno.
 
 ## Artigo e organização da entrega
 
-O artigo usa o modelo oficial da SBC. O PDF, a identificação acadêmica e os
-fontes editáveis estão apenas na pasta local `artigo/`, para envio separado
-ao professor. As tabelas e figuras foram geradas dos JSONs e CSVs medidos,
-sem inventar resultados.
+O artigo científico foi preparado no modelo oficial da SBC e será enviado
+separadamente ao professor pelo Microsoft Teams. O PDF e os fontes editáveis
+permanecem na pasta local `artigo/`, ignorada pelo Git e ausente deste
+repositório público.
 
-`docs/GUIA_DE_ENTREGA.md` organiza os arquivos e orienta o envio do artigo
-pelo Teams. `docs/GUIA_DE_ESTUDO.md` explica os principais resultados e limites.
-Os arquivos do artigo estão separados dos scripts necessários para executar
-o simulador e os experimentos.
+As tabelas e figuras do artigo foram geradas a partir dos JSONs e CSVs
+medidos nos experimentos, disponíveis em `resultados/`.
+
+O [Guia de entrega](docs/GUIA_DE_ENTREGA.md) organiza os arquivos e orienta
+o envio do artigo e do link do repositório. O [Guia de estudo](docs/GUIA_DE_ESTUDO.md)
+explica os principais métodos, resultados e limites.
+
+O código, os testes, o simulador, os dados e os prints permanecem disponíveis
+neste repositório para reprodução dos experimentos.
