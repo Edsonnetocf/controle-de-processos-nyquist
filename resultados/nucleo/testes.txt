@@ -1,0 +1,43 @@
+test_absent_crossing_not_invented_as_infinite (test_core.FrequencyTests.test_absent_crossing_not_invented_as_infinite) ... ok
+test_bode_first_order_reference (test_core.FrequencyTests.test_bode_first_order_reference) ... ok
+test_delay_margin_reference (test_core.FrequencyTests.test_delay_margin_reference) ... ok
+test_exact_unwrapped_delay_phase (test_core.FrequencyTests.test_exact_unwrapped_delay_phase) ... ok
+test_integrator_phase_margin (test_core.FrequencyTests.test_integrator_phase_margin) ... ok
+test_invalid_frequency_grid (test_core.FrequencyTests.test_invalid_frequency_grid) ... ok
+test_third_order_gain_and_phase_margins (test_core.FrequencyTests.test_third_order_gain_and_phase_margins) ... ok
+test_characteristic_polynomials (test_core.ModelTests.test_characteristic_polynomials) ... ok
+test_delay_requires_explicit_approximation (test_core.ModelTests.test_delay_requires_explicit_approximation) ... ok
+test_exact_delay (test_core.ModelTests.test_exact_delay) ... ok
+test_invalid_input (test_core.ModelTests.test_invalid_input) ... ok
+test_pade_converges_at_fixed_frequency (test_core.ModelTests.test_pade_converges_at_fixed_frequency) ... ok
+test_pade_first_order (test_core.ModelTests.test_pade_first_order) ... ok
+test_a_matches_analytical_limit (test_core.NyquistTests.test_a_matches_analytical_limit) ... ok
+test_analytical_delay_threshold (test_core.NyquistTests.test_analytical_delay_threshold) ... ok
+test_clockwise_convention (test_core.NyquistTests.test_clockwise_convention) ... ok
+test_critical_gain_is_not_classified_as_stable (test_core.NyquistTests.test_critical_gain_is_not_classified_as_stable) ... ok
+test_hidden_cancellation_rejected (test_core.NyquistTests.test_hidden_cancellation_rejected) ... ok
+test_high_gain_requires_larger_outer_contour (test_core.NyquistTests.test_high_gain_requires_larger_outer_contour) ... ok
+test_integrator_indentation (test_core.NyquistTests.test_integrator_indentation) ... ok
+test_nearly_axis_pole_does_not_receive_false_certificate (test_core.NyquistTests.test_nearly_axis_pole_does_not_receive_false_certificate) ... ok
+test_nonminimum_phase (test_core.NyquistTests.test_nonminimum_phase) ... ok
+test_point_on_contour_is_rejected (test_core.NyquistTests.test_point_on_contour_is_rejected) ... ok
+test_small_gain_unstable_root_not_hidden_by_indentation (test_core.NyquistTests.test_small_gain_unstable_root_not_hidden_by_indentation) ... ok
+test_two_imaginary_axis_poles (test_core.NyquistTests.test_two_imaginary_axis_poles) ... ok
+test_unstable_open_loop_and_negative_encirclement (test_core.NyquistTests.test_unstable_open_loop_and_negative_encirclement) ... ok
+test_closed_loop_residuals (test_core.RootLocusTests.test_closed_loop_residuals) ... ok
+test_hungarian_matches_exhaustive_reference (test_core.RootLocusTests.test_hungarian_matches_exhaustive_reference) ... ok
+test_invalid_gain_order (test_core.RootLocusTests.test_invalid_gain_order) ... ok
+test_second_order_analytical_roots (test_core.RootLocusTests.test_second_order_analytical_roots) ... ok
+test_a_analytical_limit (test_core.RouthTests.test_a_analytical_limit) ... ok
+test_b_analytical_interval (test_core.RouthTests.test_b_analytical_interval) ... ok
+test_c_analytical_limit (test_core.RouthTests.test_c_analytical_limit) ... ok
+test_complete_zero_row_repeated_imaginary_roots (test_core.RouthTests.test_complete_zero_row_repeated_imaginary_roots) ... ok
+test_constructed_polynomials (test_core.RouthTests.test_constructed_polynomials) ... ok
+test_positive_scaling_invariance (test_core.RouthTests.test_positive_scaling_invariance) ... ok
+test_zero_pivot_and_epsilon_sensitivity (test_core.RouthTests.test_zero_pivot_and_epsilon_sensitivity) ... ok
+test_zero_row_does_not_hide_unstable_root (test_core.RouthTests.test_zero_row_does_not_hide_unstable_root) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.461s
+
+OK

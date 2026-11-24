@@ -1,0 +1,11 @@
+{
+  "executed_at_sao_paulo": "2026-11-23T21:56:33.310960-03:00",
+  "python": "3.14.3",
+  "numpy": "2.5.5",
+  "test_methods": 38,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "scope": "Referências analíticas, consistência matemática e casos especiais. Não substitui validação cruzada ou benchmarking da próxima etapa."
+}
