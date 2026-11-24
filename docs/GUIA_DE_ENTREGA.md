@@ -32,8 +32,10 @@ os dados de resultados/simulador/ e os experimentos em lote.
 Não é necessária preparação de slides ou seminário, conforme dispensa do
 professor relatada pelo aluno.
 
-## Licença
+## Estado final
 
-A licença de código aberto ainda deve ser escolhida pelo autor; tornar o repositório público
-não equivale a conceder uma licença de reutilização. Não foi presumida
-uma autorização de licenciamento dos direitos do autor.
+O autor definiu que um repositório público basta para esta entrega e dispensou
+a adição de licença. Essa decisão não constitui uma pendência do projeto.
+
+Desenvolvimento, validação, documentação e artigo concluídos. Cabe ao aluno
+enviar o PDF pelo Teams e informar ao professor o link do repositório público.

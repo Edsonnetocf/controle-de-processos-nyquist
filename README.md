@@ -118,9 +118,9 @@ explicitamente identificados como aproximações de Padé [3/3].
 Repositório público do projeto:
 https://github.com/Edsonnetocf/controle-de-processos-nyquist
 
-A primeira etapa está publicada; as alterações posteriores são registradas
-em commits locais e enviadas ao GitHub quando a publicação é autorizada.
-O desenvolvimento das próximas etapas será registrado no mesmo histórico.
+O repositório reúne o núcleo, os testes, a validação cruzada, os benchmarks,
+o simulador e as evidências. As alterações estão registradas no histórico Git.
+O autor optou por manter o repositório público sem adicionar uma licença.
 Não há execução em placa física. A aplicação prática é uma simulação integral
 em software, conforme autorização do professor relatada pelo aluno.
 
@@ -131,7 +131,7 @@ fontes editáveis estão apenas na pasta local `artigo/`, para envio separado
 ao professor. As tabelas e figuras foram geradas dos JSONs e CSVs medidos,
 sem inventar resultados.
 
-`docs/GUIA_DE_ENTREGA.md` organiza os arquivos e registra a licença ainda
-pendente. `docs/GUIA_DE_ESTUDO.md` explica os principais resultados e limites.
+`docs/GUIA_DE_ENTREGA.md` organiza os arquivos e orienta o envio do artigo
+pelo Teams. `docs/GUIA_DE_ESTUDO.md` explica os principais resultados e limites.
 Os arquivos do artigo estão separados dos scripts necessários para executar
 o simulador e os experimentos.

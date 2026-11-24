@@ -83,5 +83,5 @@ relaciona os prints às configurações e aos dados exportados pela interface.
 ## Estado da entrega
 
 Artigo de 12 páginas preparado para envio separado pelo Teams. A pasta artigo/ é local, ignorada pelo Git e não acompanha o repositório público.
-Licença de código aberto ainda depende da escolha do autor.
+Repositório público mantido sem licença adicional, conforme decisão do autor. Não há pendência de licenciamento para esta entrega.
 A publicação de novos commits é tratada separadamente da validação local.
