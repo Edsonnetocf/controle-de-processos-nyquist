@@ -1,0 +1,26 @@
+{
+  "type": "capturas reais da janela em execução",
+  "images": [
+    {
+      "file": "01_pid_estavel.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1020,
+      "sha256": "0ae80776816ebba73d00a829dd765836d598fd75075c2cb1311d7628c15396cd"
+    },
+    {
+      "file": "02_pid_instavel.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1020,
+      "sha256": "f251103955793dc6df5a6e056dc9c6731f1c4645a0fbb520438357c2ec4fc19e"
+    },
+    {
+      "file": "03_nyquist_bode_instavel.jpg",
+      "format": "JPEG",
+      "width": 1920,
+      "height": 1020,
+      "sha256": "a60ddd9bd6e5b80efdbfe0116588c4eb3277ae6439b88d24548f29e7b172f22d"
+    }
+  ]
+}

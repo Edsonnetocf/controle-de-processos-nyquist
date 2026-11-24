@@ -222,6 +222,16 @@ class FrequencyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             bode(TransferFunction([1], [1, 1]), [1, 0])
 
+    def test_static_phase_crossing_of_unstable_plant(self):
+        result = margins(benchmark_models()['B'], 5)
+        self.assertAlmostEqual(result.gain_margin, 1.2, places=10)
+        self.assertEqual(result.phase_crossovers[0], 0)
+
+    def test_static_unit_magnitude_boundary(self):
+        result = margins(benchmark_models()['B'], 6)
+        self.assertAlmostEqual(result.gain_crossovers[0], 0)
+        self.assertAlmostEqual(result.phase_margin_deg, 0, places=10)
+
 
 class RootLocusTests(unittest.TestCase):
     def test_second_order_analytical_roots(self):

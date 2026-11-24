@@ -19,7 +19,16 @@ seminário e autorização para simulador com prints.
   https://python-control.readthedocs.io/en/latest/generated/control.margin.html
   Referência para escolha de margem quando existem múltiplos cruzamentos.
 
-## Bibliografia indicada no enunciado, ainda não consultada integralmente
+## Documentação adicional consultada para a segunda etapa
+
+- SciPy, `cont2discrete`: https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.cont2discrete.html
+  Referência de discretização ZOH, usada exclusivamente para validar a planta.
+- Python Control Systems Library, `root_locus_map`:
+  https://python-control.readthedocs.io/en/latest/generated/control.root_locus_map.html
+- Python Control Systems Library, `stability_margins`:
+  https://python-control.readthedocs.io/en/latest/generated/control.stability_margins.html
+
+## Livros recomendados no enunciado, ainda não consultados integralmente
 
 - OGATA, Katsuhiko. Engenharia de Controle Moderno. 5ª ed. Pearson, 2010.
 - NISE, Norman S. Engenharia de Sistemas de Controle. 7ª ed. LTC, 2017.

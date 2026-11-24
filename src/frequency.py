@@ -92,7 +92,7 @@ def margins(model, gain=1.0, omega=None):
     rational_phase = np.radians(response.phase_deg)+w*model.delay
 
     def phase_at(value):
-        ref = np.interp(np.log(value), np.log(w), rational_phase)
+        ref = rational_phase[0] if value == 0 else np.interp(np.log(value), np.log(w), rational_phase)
         angle = float(np.angle(model.evaluate(1j*value, gain, include_delay=False)))
         angle += 2*np.pi*round((ref-angle)/(2*np.pi))
         return angle-value*model.delay
@@ -104,6 +104,9 @@ def margins(model, gain=1.0, omega=None):
     for i in np.flatnonzero(db[:-1]*db[1:] <= 0):
         gain_cross.append(_bisect_log(log_magnitude, w[i], w[i+1]))
     gain_cross = _unique(gain_cross)
+    dc = complex(model.evaluate(0, gain)) if model.denominator[-1] != 0 else None
+    if dc is not None and abs(abs(dc)-1) < 1e-12:
+        gain_cross = np.r_[0.0, gain_cross]
     pm = np.array([(np.degrees(phase_at(value))+360) % 360-180 for value in gain_cross])
 
     phase = np.radians(response.phase_deg)
@@ -116,5 +119,7 @@ def margins(model, gain=1.0, omega=None):
             target = (2*m+1)*np.pi
             phase_cross.append(_bisect_log(lambda x: phase_at(x)-target, w[i], w[i+1]))
     phase_cross = _unique(phase_cross)
+    if dc is not None and dc.real < 0 and abs(dc.imag) < 1e-12:
+        phase_cross = np.r_[0.0, phase_cross]
     gm = np.array([1/abs(model.frequency_response(value, gain)) for value in phase_cross])
     return MarginResult(gain_cross, pm, phase_cross, gm, float(w[0]), float(w[-1]))

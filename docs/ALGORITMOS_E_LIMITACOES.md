@@ -66,6 +66,9 @@ antes de subtrair ωτ, evitando aliasing do exponencial em malhas espaçadas.
 Os cruzamentos são localizados na malha e refinados por bisseção em log(ω).
 Todos os cruzamentos encontrados são registrados; a margem selecionada é
 a mais próxima de zero grau ou de ganho unitário em escala logarítmica.
+Quando a resposta em zero é finita, o limite estático também é avaliado,
+mesmo que a malha positiva de frequências comece acima de zero. Essa
+correção foi motivada pela comparação externa da planta B com K=5.
 
 Limites: a busca é finita. Ausência de cruzamento significa `None`/`null`,
 nunca prova automática de margem infinita. Contatos tangenciais e cruzamentos
@@ -78,4 +81,5 @@ generalizado, especialmente para plantas instáveis em malha aberta.
 Concordância com referências analíticas nos casos declarados, tratamento
 dos casos especiais e consistência das operações. Não demonstram correção
 universal, precisão em toda ordem polinomial ou atendimento da etapa final.
-A validação cruzada com bibliotecas e os ensaios n=5,10,20 estão pendentes.
+A validação cruzada e os ensaios n=5,10,20 estão descritos nos relatórios
+da segunda etapa, preservando os limites das conclusões experimentais.

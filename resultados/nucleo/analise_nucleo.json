@@ -86,9 +86,11 @@
           0.7057182724928808
         ],
         "phase_crossovers_rad_s": [
+          0.0,
           0.9999999999989533
         ],
         "all_gain_margin_factors": [
+          0.75,
           1.2499999999989533
         ],
         "all_phase_margin_deg": [

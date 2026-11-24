@@ -46,7 +46,8 @@ Exemplo do núcleo: K=2 e τ=0,5 s. A característica exata é
 
 Nyquist e Bode avaliam o exponencial diretamente. A tabela de Routh e
 o Lugar das Raízes usam, no exemplo, Padé [3/3], sem confundir esse resultado
-aproximado com a análise exata. O PID digital será adicionado na próxima etapa.
+aproximado com a análise exata. A aplicação PID digital está descrita em
+`SIMULACAO_PID.md`.
 
 ## Referência independente para testar atraso
 
@@ -56,9 +57,8 @@ estabilidade ocorre em τcrit=[π-arctan(√3)]/√3 ≈ 1,2092 s.
 Os testes verificam estabilidade abaixo e instabilidade acima desse valor,
 além de não certificar estabilidade exatamente na fronteira.
 
-## Decisões ainda pendentes
+## Documentação da etapa prática
 
-Sintonia e discretização do PID, período de amostragem, tratamento do atraso
-no domínio do tempo e protocolo experimental de escalabilidade serão
-documentados na próxima etapa. A simulação autorizada não será descrita como
-HIL físico ou como execução em uma placa real.
+As decisões de discretização, sintonia e protocolo experimental foram
+documentadas em `SIMULACAO_PID.md` e `REVISAO_ETAPA_2.md`. A simulação
+autorizada não é HIL físico nem execução em uma placa real.

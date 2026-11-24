@@ -1,0 +1,498 @@
+{
+  "pid_limits": {
+    "continuous_s": 0.9973455557378168,
+    "digital_s": 0.9912668896184764,
+    "digital_crossovers_rad_s": [
+      1.3798758422112198
+    ],
+    "sample_time_s": 0.01,
+    "prediction_scope": "modelo linear; atraso constante; base estável"
+  },
+  "pid_cases": [
+    {
+      "name": "sem_atraso",
+      "factor_of_digital_limit": 0,
+      "metrics": {
+        "max_abs_output": 0.9999999999999972,
+        "final_output": 0.9999999999999972,
+        "tail_max_abs_error": 2.7755575615628914e-15,
+        "iae": 0.9950000000000568,
+        "overshoot_percent": 0.0,
+        "settling_time_2pct_s_observed": 5.47,
+        "requested_delay_s": 0.0,
+        "effective_delay_s": 0.0,
+        "delay_samples": 0,
+        "stopped_early": false,
+        "duration_s": 100.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.01
+        }
+      },
+      "continuous_nyquist_status": "stable",
+      "continuous_nyquist_rhp": 0
+    },
+    {
+      "name": "estavel",
+      "factor_of_digital_limit": 0.6,
+      "metrics": {
+        "max_abs_output": 1.4560845133586318,
+        "final_output": 1.000000000000025,
+        "tail_max_abs_error": 1.1594392113067897e-11,
+        "iae": 2.4760161060181236,
+        "overshoot_percent": 45.60845133586318,
+        "settling_time_2pct_s_observed": 11.9,
+        "requested_delay_s": 0.5947601337710858,
+        "effective_delay_s": 0.59,
+        "delay_samples": 59,
+        "stopped_early": false,
+        "duration_s": 100.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.01
+        }
+      },
+      "continuous_nyquist_status": "stable",
+      "continuous_nyquist_rhp": 0
+    },
+    {
+      "name": "proximo_limite",
+      "factor_of_digital_limit": 0.95,
+      "metrics": {
+        "max_abs_output": 1.8801586117156885,
+        "final_output": 1.0748998927684572,
+        "tail_max_abs_error": 0.13686231237565005,
+        "iae": 23.56113366832279,
+        "overshoot_percent": 88.01586117156886,
+        "settling_time_2pct_s_observed": null,
+        "requested_delay_s": 0.9417035451375526,
+        "effective_delay_s": 0.9400000000000001,
+        "delay_samples": 94,
+        "stopped_early": false,
+        "duration_s": 100.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.01
+        }
+      },
+      "continuous_nyquist_status": "stable",
+      "continuous_nyquist_rhp": 0
+    },
+    {
+      "name": "instavel",
+      "factor_of_digital_limit": 1.5,
+      "metrics": {
+        "max_abs_output": 385178.490338701,
+        "final_output": -323675.3785106887,
+        "tail_max_abs_error": 385177.490338701,
+        "iae": 2331566.7567826486,
+        "overshoot_percent": 38517749.0338701,
+        "settling_time_2pct_s_observed": null,
+        "requested_delay_s": 1.4869003344277147,
+        "effective_delay_s": 1.49,
+        "delay_samples": 149,
+        "stopped_early": false,
+        "duration_s": 100.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.01
+        }
+      },
+      "continuous_nyquist_status": "unstable",
+      "continuous_nyquist_rhp": 2
+    }
+  ],
+  "sampling_convergence": [
+    {
+      "continuous_s": 0.9973455557378168,
+      "digital_s": 0.9852112511676437,
+      "digital_crossovers_rad_s": [
+        1.3810253995310757
+      ],
+      "sample_time_s": 0.02,
+      "prediction_scope": "modelo linear; atraso constante; base estável",
+      "metrics_at_delay_04s": {
+        "max_abs_output": 1.2416016887474657,
+        "final_output": 0.9999999999994436,
+        "tail_max_abs_error": 1.0758893775886236e-10,
+        "iae": 1.466145789555908,
+        "overshoot_percent": 24.160168874746567,
+        "settling_time_2pct_s_observed": 7.18,
+        "requested_delay_s": 0.4,
+        "effective_delay_s": 0.4,
+        "delay_samples": 20,
+        "stopped_early": false,
+        "duration_s": 60.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.02
+        }
+      }
+    },
+    {
+      "continuous_s": 0.9973455557378168,
+      "digital_s": 0.9912668896184764,
+      "digital_crossovers_rad_s": [
+        1.3798758422112198
+      ],
+      "sample_time_s": 0.01,
+      "prediction_scope": "modelo linear; atraso constante; base estável",
+      "metrics_at_delay_04s": {
+        "max_abs_output": 1.2359022279626555,
+        "final_output": 0.999999999999431,
+        "tail_max_abs_error": 1.1010969913627378e-10,
+        "iae": 1.4542051002789866,
+        "overshoot_percent": 23.590222796265547,
+        "settling_time_2pct_s_observed": 7.07,
+        "requested_delay_s": 0.4,
+        "effective_delay_s": 0.4,
+        "delay_samples": 40,
+        "stopped_early": false,
+        "duration_s": 60.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.01
+        }
+      }
+    },
+    {
+      "continuous_s": 0.9973455557378168,
+      "digital_s": 0.9943033503257135,
+      "digital_crossovers_rad_s": [
+        1.3792933442500628
+      ],
+      "sample_time_s": 0.005,
+      "prediction_scope": "modelo linear; atraso constante; base estável",
+      "metrics_at_delay_04s": {
+        "max_abs_output": 1.2330792782025808,
+        "final_output": 0.9999999999994253,
+        "tail_max_abs_error": 1.1137990529874742e-10,
+        "iae": 1.4484334907021217,
+        "overshoot_percent": 23.30792782025808,
+        "settling_time_2pct_s_observed": 5.53,
+        "requested_delay_s": 0.4,
+        "effective_delay_s": 0.4,
+        "delay_samples": 80,
+        "stopped_early": false,
+        "duration_s": 60.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.005
+        }
+      }
+    },
+    {
+      "continuous_s": 0.9973455557378168,
+      "digital_s": 0.9958238376751102,
+      "digital_crossovers_rad_s": [
+        1.37900007557141
+      ],
+      "sample_time_s": 0.0025,
+      "prediction_scope": "modelo linear; atraso constante; base estável",
+      "metrics_at_delay_04s": {
+        "max_abs_output": 1.2316656616891248,
+        "final_output": 0.9999999999994225,
+        "tail_max_abs_error": 1.1202194727388814e-10,
+        "iae": 1.4455955694332765,
+        "overshoot_percent": 23.16656616891248,
+        "settling_time_2pct_s_observed": 5.4875,
+        "requested_delay_s": 0.4,
+        "effective_delay_s": 0.4,
+        "delay_samples": 160,
+        "stopped_early": false,
+        "duration_s": 60.0,
+        "config": {
+          "kp": 2.0,
+          "ki": 1.0,
+          "kd": 0.2,
+          "tf": 0.05,
+          "sample_time": 0.0025
+        }
+      }
+    }
+  ],
+  "pade_comparison": [
+    {
+      "tau_s": 0.5,
+      "order": 1,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.10289036615695224,
+      "rms_abs_frequency_response_error": 0.04157778617321062,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 0.5,
+      "order": 3,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.022640601330116514,
+      "rms_abs_frequency_response_error": 0.006280876381605648,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 0.5,
+      "order": 5,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.010275718456065314,
+      "rms_abs_frequency_response_error": 0.0022021535245835178,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 0.5,
+      "order": 7,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.004426206606352192,
+      "rms_abs_frequency_response_error": 0.0005186683655263598,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.0,
+      "order": 1,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.3513961703430104,
+      "rms_abs_frequency_response_error": 0.13208170022029508,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.0,
+      "order": 3,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.0882940734259843,
+      "rms_abs_frequency_response_error": 0.02473343930971659,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.0,
+      "order": 5,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.04066652579064344,
+      "rms_abs_frequency_response_error": 0.009714940394002019,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.0,
+      "order": 7,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.023597621846928752,
+      "rms_abs_frequency_response_error": 0.005058469912988413,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.2,
+      "order": 1,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.4717080907044333,
+      "rms_abs_frequency_response_error": 0.1737650538639525,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.2,
+      "order": 3,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.12532883993908828,
+      "rms_abs_frequency_response_error": 0.035010559995465276,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.2,
+      "order": 5,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.05820093074898017,
+      "rms_abs_frequency_response_error": 0.013934287116771903,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.2,
+      "order": 7,
+      "exact_rhp": 0,
+      "approximate_rhp": 0,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.03386412718399265,
+      "rms_abs_frequency_response_error": 0.00733657057516472,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.3,
+      "order": 1,
+      "exact_rhp": 2,
+      "approximate_rhp": 0,
+      "classification_matches": false,
+      "max_abs_frequency_response_error": 0.5342356213952744,
+      "rms_abs_frequency_response_error": 0.1950738945055698,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.3,
+      "order": 3,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.14591492494147074,
+      "rms_abs_frequency_response_error": 0.04069924517233112,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.3,
+      "order": 5,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.06807013288842112,
+      "rms_abs_frequency_response_error": 0.01630656044065852,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.3,
+      "order": 7,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.03966521189466622,
+      "rms_abs_frequency_response_error": 0.00860122424022062,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.6,
+      "order": 1,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.7268072787421079,
+      "rms_abs_frequency_response_error": 0.25951102816335814,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.6,
+      "order": 3,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.21514335488334166,
+      "rms_abs_frequency_response_error": 0.0596963332405682,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.6,
+      "order": 5,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.1018940971126743,
+      "rms_abs_frequency_response_error": 0.024407793568889197,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    },
+    {
+      "tau_s": 1.6,
+      "order": 7,
+      "exact_rhp": 2,
+      "approximate_rhp": 2,
+      "classification_matches": true,
+      "max_abs_frequency_response_error": 0.05967940300852184,
+      "rms_abs_frequency_response_error": 0.013007923429822349,
+      "frequency_range_rad_s": [
+        0.01,
+        30.0
+      ]
+    }
+  ],
+  "scope": "Simulação integral em software, não HIL físico. Planta exata entre amostras; atraso quantizado. Sem saturação."
+}

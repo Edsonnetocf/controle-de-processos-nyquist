@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "max_abs_output": 385178.490338701,
+    "final_output": -323675.3785106887,
+    "tail_max_abs_error": 385177.490338701,
+    "iae": 2331566.7567826486,
+    "overshoot_percent": 38517749.0338701,
+    "settling_time_2pct_s_observed": null,
+    "requested_delay_s": 1.4869,
+    "effective_delay_s": 1.49,
+    "delay_samples": 149,
+    "stopped_early": false,
+    "duration_s": 100.0,
+    "config": {
+      "kp": 2.0,
+      "ki": 1.0,
+      "kd": 0.2,
+      "tf": 0.05,
+      "sample_time": 0.01
+    }
+  },
+  "limits": {
+    "continuous_s": 0.9973455557378168,
+    "digital_s": 0.9912668896184764,
+    "digital_crossovers_rad_s": [
+      1.3798758422112198
+    ],
+    "sample_time_s": 0.01,
+    "prediction_scope": "modelo linear; atraso constante; base estável"
+  },
+  "continuous_nyquist_status": "unstable"
+}

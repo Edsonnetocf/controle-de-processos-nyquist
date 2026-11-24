@@ -24,8 +24,8 @@ if __name__ == '__main__':
         'test_methods': result.testsRun, 'failures': len(result.failures),
         'errors': len(result.errors), 'skipped': len(result.skipped),
         'success': result.wasSuccessful(),
-        'scope': 'Referências analíticas, consistência matemática e casos especiais. '
-                 'Não substitui validação cruzada ou benchmarking da próxima etapa.',
+        'scope': 'Testes de núcleo, referências analíticas, casos especiais e PID digital. '
+                 'Validação cruzada e benchmarking têm relatórios separados.',
     }
     (folder/'validacao_nucleo.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
     print(text)
