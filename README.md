@@ -7,7 +7,9 @@ Nyquist, Routh-Hurwitz, Lugar das Raízes e Bode, com margens de estabilidade.
 
 Núcleo, validação cruzada, benchmarks nas ordens 5/10/20 e simulador PID
 digital implementados. Resultados medidos estão em `resultados/`; capturas
-reais da aplicação ficam em `evidencias/`. O artigo é a próxima entrega.
+reais da aplicação ficam em `evidencias/`. O artigo de 12 páginas foi preparado
+para envio separado pelo Teams. A pasta local `artigo/` é ignorada pelo Git
+e não acompanha o clone deste repositório.
 Os gráficos exportados não devem ser confundidos com capturas de tela ou
 evidências de execução em hardware físico.
 
@@ -121,3 +123,15 @@ em commits locais e enviadas ao GitHub quando a publicação é autorizada.
 O desenvolvimento das próximas etapas será registrado no mesmo histórico.
 Não há execução em placa física. A aplicação prática é uma simulação integral
 em software, conforme autorização do professor relatada pelo aluno.
+
+## Artigo e organização da entrega
+
+O artigo usa o modelo oficial da SBC. O PDF, a identificação acadêmica e os
+fontes editáveis estão apenas na pasta local `artigo/`, para envio separado
+ao professor. As tabelas e figuras foram geradas dos JSONs e CSVs medidos,
+sem inventar resultados.
+
+`docs/GUIA_DE_ENTREGA.md` organiza os arquivos e registra a licença ainda
+pendente. `docs/GUIA_DE_ESTUDO.md` explica os principais resultados e limites.
+Os arquivos do artigo estão separados dos scripts necessários para executar
+o simulador e os experimentos.

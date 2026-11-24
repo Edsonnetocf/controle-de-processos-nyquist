@@ -80,7 +80,8 @@ Três capturas reais da janela estão em evidencias/: cenário estável,
 cenário instável e Nyquist/Bode do caso instável. O arquivo LEIA-ME.md
 relaciona os prints às configurações e aos dados exportados pela interface.
 
-## Entrega ainda pendente
+## Estado da entrega
 
-Artigo científico, revisão final da documentação e licença de código aberto.
+Artigo de 12 páginas preparado para envio separado pelo Teams. A pasta artigo/ é local, ignorada pelo Git e não acompanha o repositório público.
+Licença de código aberto ainda depende da escolha do autor.
 A publicação de novos commits é tratada separadamente da validação local.

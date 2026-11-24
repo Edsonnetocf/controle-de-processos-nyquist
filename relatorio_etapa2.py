@@ -64,14 +64,17 @@ def generate():
     for row in mismatches:
         lines.append(f'- τ={row["tau_s"]} s, Padé ordem {row["order"]}: Z aproximado={row["approximate_rhp"]}, Z exato={row["exact_rhp"]}.')
     if not mismatches:lines.append('Não houve divergência de classificação nos casos executados.')
+    article_status=('Artigo de 12 páginas preparado para envio separado pelo Teams. '
+                    'A pasta artigo/ é local, ignorada pelo Git e não acompanha o repositório público.')
     lines+=['','Foram medidos erros complexos RMS e máximos em 0,01 a 30 rad/s para ordens',
             '1, 3, 5 e 7. Concordância de classificação não significa aproximação exata.','',
             '## Evidências da interface','',
             'Três capturas reais da janela estão em evidencias/: cenário estável,',
             'cenário instável e Nyquist/Bode do caso instável. O arquivo LEIA-ME.md',
             'relaciona os prints às configurações e aos dados exportados pela interface.','',
-            '## Entrega ainda pendente','',
-            'Artigo científico, revisão final da documentação e licença de código aberto.',
+            '## Estado da entrega','',
+            article_status,
+            'Licença de código aberto ainda depende da escolha do autor.',
             'A publicação de novos commits é tratada separadamente da validação local.']
     Path('docs/REVISAO_ETAPA_2.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
